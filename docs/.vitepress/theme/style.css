@@ -1,0 +1,66 @@
+/**
+ * Nova Corporation Theme
+ */
+
+:root {
+  /* Brand Colors */
+  --nova-red: #b33c3c;
+  --nova-red-dark: #8c2f2f;
+  --nova-red-light: #d94c4c;
+  --nova-red-soft: rgba(179, 60, 60, 0.14);
+
+  /* Override Default Theme Colors */
+  --vp-c-brand-1: var(--nova-red);
+  --vp-c-brand-2: var(--nova-red-dark);
+  --vp-c-brand-3: var(--nova-red-light);
+  --vp-c-brand-soft: var(--nova-red-soft);
+
+  /* Button Styling */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--nova-red);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--nova-red-dark);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--nova-red-light);
+
+  /* Home Hero Section */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    var(--nova-red) 30%,
+    var(--nova-red-light)
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    var(--nova-red) 50%,
+    var(--nova-red-dark) 50%
+  );
+  --vp-home-hero-image-filter: blur(24px);
+
+  /* Custom Block */
+  --vp-custom-block-tip-border: var(--nova-red);
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--nova-red-soft);
+  --vp-custom-block-tip-code-bg: var(--nova-red-soft);
+}
+
+/* Home Hero Image */
+.VPHero .image {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.VPHero .image-bg {
+  background-color: var(--nova-red-soft);
+  opacity: 0.6;
+}
+
+/* Algolia Search */
+.DocSearch {
+  --docsearch-primary-color: var(--nova-red) !important;
+}
+
