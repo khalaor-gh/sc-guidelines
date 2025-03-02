@@ -5,6 +5,8 @@ export default defineConfig({
   title: "Security Corps Guidelines",
   description: "Guidelines",
 
+  base: '/sc-guidelines/',
+
   cleanUrls: true,
   lastUpdated: true,
 
